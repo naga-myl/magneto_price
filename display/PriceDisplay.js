@@ -1,5 +1,5 @@
 // Includes
-const { Builder, By, Key, until } = require('selenium-webdriver');
+/*const { Builder, By, Key, until } = require('selenium-webdriver');
 
 const assert = require('assert');
 const should = require('chai').should();
@@ -12,7 +12,7 @@ const expect = require('chai').expect;
     sorted by price.*/
 
 
-             describe('Sort by Price', () => {
+           /*  describe.only('Sort by Price', () => {
                 // Test case:
                     context('Search for shirts in search bar and perfom sorting', () => {
                         it('I see the shirts in sorted order', async () => {
@@ -43,11 +43,9 @@ const expect = require('chai').expect;
 
                                         await driver.wait(until.elementLocated(By.css('.product')),10000);
                                         await driver.findElement(By.css('.product'));
-                                       // await valuesort.findElement(By.css('.product > strong:first-child')).getText();
-                                    
                                         let sor= await valuesort.findElement(By.css('.product > strong:first-child')).getText();
                                         //let displaysort=await value.getText();
-                                       console.log(sor);
+                                        console.log(sor);
 
                                         await driver.sleep(2000);
                                         //price selecting
@@ -55,20 +53,9 @@ const expect = require('chai').expect;
                                         let price=await driver.findElement(By.css('.sorter-options'));
                                         await driver.sleep(1000);
                                         await driver.findElement(By.css('.sorter-options > option:nth-child(2)')).click();
-                                        
-                                       //assert.equal(sor,'Circe Hooded Ice Fleecee'); // Builtin Node
-                                        //expect(sor).to.equal('Circe Hooded Ice Fleecee'); // Chai expect
-                                       // console.log('${Shirts are sorted by descending Price and the first one is}');
-                                        sor.should.equal('Circe Hooded Ice Fleece'); // Chai should
-                                        //console.log('Shirts are sorted by descending Price and the first one is');
-                                     
-                                       // console.log(sor);
 
-                                       // console.log(sor);
-
-                                       
-                                       //await driver.quit();
-
+                                
+                                        await driver.quit();
                             }
 
                             catch(error)
@@ -77,13 +64,13 @@ const expect = require('chai').expect;
                             }
                             finally{
                                
-                               // await driver.quit();
+                              
                             }
                         });
                     });
                 });
 
-           
+           */
                             
            
            

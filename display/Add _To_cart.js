@@ -7,7 +7,7 @@ const should = require('chai').should();
                     select Tops  and 
                     choose the first item in the list that is displayed and add item to cart
                     */
-                    describe.only('Navigate to women category', () => {
+                    describe('Navigate to women category', () => {
                     // Test case:
                     context('Select Tops from dropdown', () => {
                         it('I see the selected product is added to cart', async () => {
@@ -60,10 +60,19 @@ const should = require('chai').should();
                                //document.querySelector('.product-add-form').innerHtml -text for add button selected items to cart
                                //document.querySelector('#product-addtocart-button')
 
-                               await driver.sleep(10000);
+                               await driver.sleep(5000);
                                await driver.wait(until.elementLocated(By.css('#product-addtocart-button')),10000);
                                await driver.findElement(By.id('product-addtocart-button')).click();
                             
+                               //success message
+                               //document.querySelector('.message-success');
+                               await driver.wait(until.elementLocated(By.css('.message-success')),10000);
+                               let display=await driver.findElement(By.css('.message-success')).getText();
+                               console.log(display);
+
+                               display.should.equal('You added Breathe-Easy Tank to your shopping cart.');
+                            
+
 
                                
                                  
