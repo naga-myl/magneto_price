@@ -1,4 +1,5 @@
 # magneto_price
 obtaining the price git
 
-![Scrum Board]( Trelloboard_Planning1.png )
+![Scrum Board](/Users/akirit/Documents/repos/magneto_price/Trelloboard_Planning.png)
+
