@@ -59,6 +59,9 @@ const expect = require('chai').expect;
                                        //assert.equal(sor,'Circe Hooded Ice Fleecee'); // Builtin Node
                                         //expect(sor).to.equal('Circe Hooded Ice Fleecee'); // Chai expect
                                        // console.log('${Shirts are sorted by descending Price and the first one is}');
+                                        assert.equal(sor, 'Circe Hooded Ice Fleece');//Builtin Node
+                                        
+                                        expect(sor).to.equal('Circe Hooded Ice Fleece');// Chai expect
                                         sor.should.equal('Circe Hooded Ice Fleece'); // Chai should
                                         //console.log('Shirts are sorted by descending Price and the first one is');
                                      

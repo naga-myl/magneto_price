@@ -1,7 +1,8 @@
 // Includes
 const { Builder, By, Key, until } = require('selenium-webdriver');
+const assert = require('assert');
 const should = require('chai').should();
-
+const expect = require('chai').expect;
                     /*
                     Navigate to Women and 
                     select Tops  and 
@@ -69,7 +70,9 @@ const should = require('chai').should();
                                await driver.wait(until.elementLocated(By.css('.message-success')),10000);
                                let display=await driver.findElement(By.css('.message-success')).getText();
                                console.log(display);
-
+                                            
+                               assert.equal(display,'You added Breathe-Easy Tank to your shopping cart.');//Builtin Node
+                               expect(display).to.equal('You added Breathe-Easy Tank to your shopping cart.');// Chai expect
                                display.should.equal('You added Breathe-Easy Tank to your shopping cart.');
                             
 
@@ -98,4 +101,3 @@ const should = require('chai').should();
 
 
       
-
